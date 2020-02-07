@@ -1,0 +1,1059 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<section class="container" id="Survey">
+    <div class="row" id="workContent">
+        <div class="col-xl-12">
+            <div class="card">
+                <h5 class="card-header">Instructions (new! 2/6)&nbsp;<a data-toggle="collapse" href="#instructions"
+                                                                         style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a>
+                </h5>
+                <div id="instructions" class="collapse">
+                    <div class="card-body">
+                        <p><b><i>Task Info:</i></b> We are trying to understand image edit intent and the possible implications of image edits. To do this, we want to understand which parts of an edited image are important with regards to understanding the edit.</b>
+                        </p>
+                        <p style="margin-bottom: 0">You'll be given: an <span class="emph">image edit</span>, the source image, and an annotated version of the image edit ("Image with Boxes")</p>
+                        <hr>
+                        <p style="margin-bottom: 0"><b><i>High-level idea:</i></b></p>
+                        <ul>
+                            <li>Write captions that would answer the question under each heading.
+                            <ul> <li>A caption should be a short, complete sentence. The beginning of each caption is provided.</li>
+                                <li>Please write 3 captions per question. Each caption should be different from the others.</li>
+                                <li>Each caption should be understood without looking at the original image(s).</li>
+                                <li>Each caption should include a <span class="response">response</span> that anwers the question and also a <span class="rationale">rationale</span> that explictly refers to the image edit.</li>
+</ul></li></ul>
+<p style="margin-bottom: 0"><b><i>Step-by-step instructions:</i></b></p>
+<ul>
+        <li>1) Before typing, think about the edit - what is the intent of the edit? Take mental note of who the main persons are - who the edit is featuring.
+        <li>2) Scroll down to the questions.</li>
+            <li>3) Answer Prompt 1, <b>Is there a main person in this image (MP1)? (It's OK if there's no main people in the image, e.g. a background change.)</b></li>
+        <ul>
+            <li>If yes: label the box that captures MP1 by scrolling back up to the image labeled “Edit with Boxes”. If the boxes are hard to distinguish, just give your best guess and move on. We won’t penalize attempts here :)</li>
+            <li>If yes: answer Prompt 1. As a reminder, please write both a <span class="response">response</span> and a <span class="rationale">rationale</span> for EACH caption.</li>
+            <li>For example: MP1 would <span class="response">feel like the last person in an apocalyptic world</span> <span class="rationale">due to the fire and the fact that mp1 looks dressed for the end of the world.</span></li>
+        </ul>
+        <li>
+            4) Answer Prompt 2 and Prompt 3 in a similar manner (for different people).
+        </li>
+        <li>
+            5) Answer Prompt 4 and Prompt 5, which will ask you general questions about the image. Try to refer to each MP here.
+        </li>
+        <li>
+            6) Answer Prompt 6 by ticking one of the two boxes at the bottom of the page. If you are unsure, the edit is probably negative, since positive edits should be more obvious.
+        </li>
+        <li>
+            7) Submit!
+        </li>
+        </li>     
+        </ul>
+        <b><i>Details:</i></b> (you do not need to read all of these! they might helpful if you get stuck :))
+        <ul>
+            <li>Check out the examples! They should help with understanding what to do quickly.</li>
+            <li><span class="emph">With simple edits, it's ok to be repetitive.</span> For example, if there is just one change, you can cite the same "rationale" for all captions. If the change is more complex, please try to use different captions.</li>
+            <li><span class="emph">It's okay if there's no main people, e.g. a background change.</span> You can still answer the last two questions.</li>
+            <li>Do not refer explicitly to the images in your caption (e.g. saying “the image edit”, “the original edit”). The captions should make sense without needing to look at the images.</li>
+            <li>Your captions between Prompts might be similar. This is ok! The only criteria is that it answers the related question.</li>
+            <li>Try to refer to MP1, MP2, MP3, or other bounding boxes in the image via their tag (e.g. MP1) as often as you can.</li>
+            <li>Please use the tags MP1, MP2, MP3 to refer to the people in the image. If the person you want to refer to is not a "main person", only then you can use a bounding box tag instead (e.g. 3).</li>
+            <li>In the rare case that there are more than 3 main people in the image, pick 3 people to answer questions for.</li>
+            <li>If something is hard to see (some images can be hectic), don't stress about labeling it. You only need to label the obvious people and obvious intent.</li>
+            <li>Sometimes, the detections may not include the main person. In this case, write n/a for the bounding box and continue to fill out captions for the main person.</li>
+            <li>Please use the tags MP1, MP2, MP3 instead of the bounding box tags (e.g. do not say "3") whenever possible.</li>
+            <li>If it does not seem like the edited image is similar to the origonal image, please treat the prompt as "why would someone make an image edit like this?" rather than "why would someone edit the source image like this?". Please don't skip the HIT!</li>
+            <li>If the boxes are hard to tell or there are many boxes, just give your best guess. This will be fixed soon :)</li>
+            <li>You should use descriptors that <span class="emph">uniquely describe this scene.</span></li>
+            <ul>
+            <li><span class="do">Good:</span>"royal", "inquisitive", "inventive", "breathtaking"</li>
+            <li><span class="dont">Bad:</span> "funny", "amusing", "would laugh", "confused"</li>
+            </ul>
+            <li>(new! 2/6) Here is a <span class="emph">list of good adjectives</span> to use: <a href="https://www.hoffmaninstitute.org/wp-content/uploads/Practices-FeelingsSensations.pdf">https://www.hoffmaninstitute.org/wp-content/uploads/Practices-FeelingsSensations.pdf</href></a></li>
+            <li>Your captions should <span class="emph">refer to MP1/2/3</span>.</li>
+            <ul>
+            <li><span class="do">Do write: </span>Editor created this edit to show that MP1...</li>
+            <li><span class="dont">Don’t write: </span>Editor created this edit to show that Obama...</li>
+            </ul>
+            <li>Please do not work on these HITs if you work at the University of Washington. <span class="smalltxt">(we have to include this rule in our HITs...)</span></li>
+        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-header">Examples (new! 2/6) &nbsp; &nbsp;<a data-toggle="collapse" href="#examples"
+                                                                         style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a>
+                </h5>
+                <div id="examples" class="collapse">
+                    <div class="card-body">
+                        <h4><b>Check out great examples in the <span class="emph">"Hall of Fame":</span> <a href="http://jeffda.com/links/research/halloffame.html">http://jeffda.com/links/research/halloffame.html</a> and a <span class="emph">video walkthrough:</span> <a href=https://www.youtube.com/watch?v=UWp8LKDcrjM>https://www.youtube.com/watch?v=UWp8LKDcrjM</a></b></h4>
+                        <!--EX-->
+                        <div class="questionrowex">
+                            Some Examples: (with <span class="response">response</span> and <span class="response">rationale</span> highlighted)
+                            <ul>
+                                <li>This edit could potentially be used to <span class="response">make people take MP1 less seriously</span> for <span class="rationale">making his pose look like a dance.</span></li>
+                                <li>This edit could potentially be used to <span class="response">make people laugh at MP1</span> <span class="rationale">by making them think of him participating in a music video.</span></li>
+                                <li>Editor created this edit to <span class="response">trivialize MP1's work</span> <span class="rationale">by insinuating that he was a backup dancer for a pop musician.</span></li>
+                                <li>Editor created this edit to <span class="response">make people laugh at MP1</span> <span class="rationale">for looking like a dancer instead of a leader.</span></li>
+                                <li>MP1 would feel <span class="response">bewildered</span> <span class="rationale">as he knows he didn't dance in any music videos but was made to look like he was in one.</span></li>
+                                <li>MP1 would feel <span class="response">self-conscious</span> <span class="rationale">because he wouldn't want people to think that he had participated in a dance music video.</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="questionrowex">
+                            Full example:
+
+                            <div class="row">
+                                <div class="card col-md-4"><h5>Edited Image:</h5><img src="https://i.imgur.com/rFKXvW1.jpg" style="width:100%;"/></div>
+                                <div class="card col-md-4"><h5>Edit with Boxes:</h5><img src="https://i.imgur.com/DwumlYd.jpg" style="width:100%;"/></div>
+                                <div class="card col-md-4"><h5>Original Image:</h5><img src="https://i.redd.it/n938ufbcp4ez.jpg" style="width:100%;"/></div>
+                            </div>
+
+                            <b>Is there a main person in this image (MP1)?</b>
+                            <ul>
+                                <li>
+                                    Yes [note: MP1 is the queen]
+                                </li>
+                            </ul>
+
+                            <b>Box Captured [note: bounding box in "Image with Boxes" that captures MP1]</b> 
+                            <ul>
+                                <li>
+                                    11
+                                </li>
+                            </ul>
+
+                            <b>How might MP1 feel after seeing this edit?</b> 
+                            <ul>
+                                <li>
+                                    MP1 would might laugh because they saw themselves holding a banana. 
+                                </li>
+                                <li>
+                                    MP1 would be confused, since they never actually held a banana.
+                                </li>
+                                <li>
+                                    MP1 would feel offended at the fact that it looks like they are banana.
+                                </li>
+                            </ul>
+
+                            <b>Is there a second main person in this image (MP2)?</b>
+                            <ul>
+                                <li>
+                                    No
+                                </li>
+                            </ul>
+
+                            <b>Is there a third main person in this image (MP3)?</b>
+                            <ul>
+                                <li>
+                                    No
+                                </li>
+                            </ul>
+
+
+                            <b>Why did Editor create this edit?</b> 
+                            <ul>
+                            <li>
+                                Editor created this edit to make people laugh at MP1 holding a banana.
+
+                            </li>
+                            <li>
+                                Editor created this edit to get rid of the idea that MP1 can hold a gun.
+                            </li>
+                            <li>
+                                Editor created this edit to hide the fact that MP1 was using a gun.
+                            </li>
+                            </ul>
+                            
+                            <b>What are the possible implications of this edit?</b> 
+                            <ul>
+                            <li>
+                                This edit could potentially be used to make people laugh at MP1 for holding a banana.
+                            </li>
+                            <li>
+                                This edit could potentially be used to mock the gun-handling skills of MP1.
+                            </li>
+                            <li>
+                                This edit could potentially be used to make fun of MP1.
+                            </li>
+                            </ul>
+
+                        </div>
+               
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!--<div class="body">-->
+                <!--<div class="img-container">-->
+                    <!--<div id="drawing" class="drawing-class"></div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div id="globalbutton" class="col-lg-2 text-center" style="padding:0"></div>-->
+                    <!--<div class="col-lg-10 buttonrow"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div class="card questioncard" style="margin-top: 0.8rem;">
+
+            <ul class="minipad"><li class="list-group-item">
+                <span class="superemph">Important!</span> Requirements:
+                <ul>
+                <li>Your captions should include both a <span class="response">response</span> (that answers the question) and a <span class="rationale">rationale</span> (that explicitly refers to the what physically changed in the image edit), and your captions should be <span class="emph">applicable to this image edit only</span> - what makes image edit special! Detail is good.</li>
+                <ul>
+                <li>For example: This edit could potentially be used to <span class="response">promote prevention of air pollutants</span> <span class="rationale">because MP1 is surrounded by smoke and has a gas mask on.</span></li>
+                </ul>
+                <li>Your captions should refer to <span class="emph">MP1/2/3</span> (e.g. instead of "Obama", say "MP1")</li>
+                </ul>
+
+            </li></ul>
+
+            <div class="panel">
+                <div class="card">
+                    <h4>Image edit:</h4>
+                    <img src="${image_e}" />
+                     </div>
+                     <h5 class="card-header">Edit with Boxes, Original Image &nbsp;<a data-toggle="collapse" href="#images" style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a></h5>
+                     <div id="images" class="collapse show">
+                        <div class="row">
+                         <div class="card col-md-12"><h5>Edit with Boxes:</h5><img src="${image_b}" style="width:100%;"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="card col-md-12"><h5>Original Image:</h5><img src="${image_o}" style="width:100%;"/></div>
+                        </div>
+                     </div>
+
+                <p></p>
+                </div>
+            </div>
+                <ul class="minipad">
+                        <li class="list-group-item"><b>Prompt 1: Is there a main person in this image (MP1)?</b>
+                            <label class="btn-success"><input type="radio" name="mp1radio" value="y">Yes</label>
+                            <label class="btn-warning"><input type="radio" name="mp1radio" value="n">No</label>
+                        </li>
+                    
+                </ul>
+                <div id="mp1radioy" style="display: none;">
+                        <div class="questionrow">
+                                <div class="row">
+                                    <div class="col-lg-3 questionbox">
+                                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured</span></div>
+                                            <textarea class="form-control hitbox" rows="1" name="mp1_box" placeholder="e.g. 3"></textarea>
+                                        </div>
+                                    </div>
+                                    <label class="btn btn-sm btn-warning form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="mp1_no_box_tf" value="no_box">
+                                            Box missing.
+                                    </label>
+                                </div>
+                            </div>
+                <li class="list-group-item"><b>Prompt 1: Write captions that answer:</b> How might MP1 feel after seeing this edit? What physical part of the edit suggests this?</li>
+                
+                <span class="example"><i>For example:</i> MP1 would <span class="response">feel heroic</span> <span class="rationale">because it looks like they came out on the other side of a battle since everything is on fire around them and they look victorious.</span></span>
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 1</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp1_feel_0" placeholder="Caption 1" id="mp1_feel_0">MP1 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 2</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp1_feel_1" placeholder="Caption 2" id="mp1_feel_1">MP1 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 3</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp1_feel_2" placeholder="Caption 3" id="mp1_feel_2">MP1 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <span class="emph"><div id="mp1_length_warning"></div></span>
+        </div>
+                <p></p>
+
+                <ul class="minipad">
+                        <li class="list-group-item"><b>Prompt 2: Is there a second main person in this image (MP2)?</b>
+                            <label class="btn-success"><input type="radio" name="mp2radio" value="ye">Yes</label>
+                            <label class="btn-warning"><input type="radio" name="mp2radio" value="n">No</label>
+                        </li>
+                </ul>
+
+                <div id="mp2radioye" style="display: none;">
+
+            <div class="questionrow">
+                    <div class="row">
+                        <div class="col-lg-3 questionbox">
+                            <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured</span></div>
+                                <textarea class="form-control hitbox" rows="1" name="mp2_box" placeholder="e.g. 3"></textarea>
+                            </div>
+                        </div>
+                        <label class="btn btn-sm btn-warning form-check-label">
+                            <input class="form-check-input" type="checkbox" name="mp3_no_box_tf" value="no_box">
+                                Box missing.
+                        </label>
+                    </div>
+                </div>
+
+                <li class="list-group-item"><b>Prompt 2: Write captions that answer:</b> How might MP2 feel after seeing this edit? What physical part of the edit suggests this?</li>
+                <span class="example"><i>For example:</i> MP2 would <span class="response">be confused</span> <span class="rationale">because he does not like anime and he does not play children card games.</span></span>
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 1</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp2_feel_0" placeholder="Caption 1" id="mp2_feel_0">MP2 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 2</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp2_feel_1" placeholder="Caption 2" id="mp2_feel_1">MP2 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 3</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp2_feel_2" placeholder="Caption 3" id="mp2_feel_2">MP2 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <span class="emph"><div id="mp2_length_warning"></div></span>
+
+            </div>
+                <p></p>
+
+                <ul class="minipad">
+                        <li class="list-group-item"><b>Prompt 3: Is there a third main person in this image (MP3)?</b>
+                            <label class="btn-success"><input type="radio" name="mp3radio" value="yes">Yes</label>
+                            <label class="btn-warning"><input type="radio" name="mp3radio" value="n">No</label>
+                        </li>
+                </ul>
+
+                <div id="mp3radioyes" style="display: none;">
+
+                <div class="questionrow">
+                        <div class="row">
+                            <div class="col-lg-3 questionbox">
+                                <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured</span></div>
+                                    <textarea class="form-control hitbox" rows="1" name="mp3_box" placeholder="e.g. 3"></textarea>
+                                </div>
+                            </div>
+                            <label class="btn btn-sm btn-warning form-check-label">
+                                <input class="form-check-input" type="checkbox" name="mp2_no_box_tf" value="no_box">
+                                    Box missing.
+                            </label>
+                        </div>
+                    </div>
+
+                <li class="list-group-item"><b>Prompt 3: Write captions that answer:</b> How might MP3 feel after seeing this edit? What physical part of the edit suggests this?</li>
+                <span class="example"><i>For example:</i> MP3 would <span class="response">feel proud</span> <span class="rationale">that the others were showing praise for their singing.</span></span>
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 1</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp3_feel_0" placeholder="Caption 1" id="mp3_feel_0">MP3 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 2</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp3_feel_1" placeholder="Caption 2" id="mp3_feel_1">MP3 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="questionrow">
+                <div class="row">
+                    <div class="col-lg-12 questionbox">
+                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 3</span></div>
+                            <textarea class="form-control hitbox" rows="2" name="mp3_feel_2" placeholder="Caption 3" id="mp3_feel_2">MP3 would </textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <span class="emph"><div id="mp3_length_warning"></div></span>
+
+                </div>
+
+            <p></p>
+
+
+            <ul class="minipad"><li class="list-group-item"><b>Prompt 4: Write captions that answer:</b> Why did Editor create this edit? What physical part of the edit suggests this?</li></ul>
+            <span class="example"><i>For example:</i> Editor created this edit to <span class="response">make MP1 appear to be a survivor of the end of the world</span> <span class="rationale">because his surroundings look like the apocalypse with all the fire and rubble.</span></span>
+            <div class="questionrow">
+            <div class="row">
+                <div class="col-lg-12 questionbox">
+                    <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 1</span></div>
+                        <textarea class="form-control hitbox" rows="2" name="intent_0" placeholder="Caption 1" id="intent_0">Editor created this edit to </textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="questionrow">
+            <div class="row">
+                <div class="col-lg-12 questionbox">
+                    <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 2</span></div>
+                        <textarea class="form-control hitbox" rows="2" name="intent_1" placeholder="Caption 2" id="intent_1">Editor created this edit to </textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="questionrow">
+            <div class="row">
+                <div class="col-lg-12 questionbox">
+                    <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 3</span></div>
+                        <textarea class="form-control hitbox" rows="2" name="intent_2" placeholder="Caption 3" id="intent_2">Editor created this edit to</textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <span class="emph"><div id="intent_length_warning"></div></span>
+
+            <p></p>
+
+            <ul class="minipad"><li class="list-group-item"><b>Prompt 5: Write captions that answer:</b> What are the possible implications of this edit? What physical part of the edit suggests this?</li></ul>
+            <span class="example"><i>For example:</i> This edit could potentially be used to <span class="response">make MP1 seem like a public hero</span> <span class="rationale">because it looks like MP1 is bravely walking out of fire and flames, similar to a vigilant firefighter.</span></span>
+            <div class="questionrow">
+            <div class="row">
+                <div class="col-lg-12 questionbox">
+                    <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 1</span></div>
+                        <textarea class="form-control hitbox" rows="2" name="implications_0" placeholder="Caption 1" id="implications_0">This edit could potentially be used to </textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="questionrow">
+            <div class="row">
+                <div class="col-lg-12 questionbox">
+                    <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 2</span></div>
+                        <textarea class="form-control hitbox" rows="2" name="implications_1" placeholder="Caption 2" id="implications_1">This edit could potentially be used to </textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="questionrow">
+            <div class="row">
+                <div class="col-lg-12 questionbox">
+                    <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption 3</span></div>
+                        <textarea class="form-control hitbox" rows="2" name="implications_2" placeholder="Caption 3" id="implications_2">This edit could potentially be used to </textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <span class="emph"><div id="implications_length_warning"></div></span>
+
+            <ul class="minipad"><li class="list-group-item"><b>Prompt 6:</b> Answer the follow true/false question.</li></ul> <br>
+
+            <label class="btn btn-sm btn-warning form-check-label">
+            <input class="form-check-input" type="radio" name="pos_neg_tf" value="y">
+                This edit is generally negative: makes fun of someone, potrays someone worse that in the source image, etc.
+            </label>
+            <label class="btn btn-sm btn-success form-check-label">
+            <input class="form-check-input" type="radio" name="pos_neg_tf" value="n">
+                This edit is generally positive: praises someone or paints someone in a positive light.
+            </label>
+
+            <p></p>
+            <!--
+            <div class="card">
+                    <h5 class="card-header">A note on wages (optional read) &nbsp;<a data-toggle="collapse" href="#wages"
+                                                                             style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a>
+                    </h5>
+                    <div id="wages" class="collapse">
+                        <div class="card-body">
+                            <p>We try to keep wages fair.</p>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+            <!--end here-->
+            <div class="card">
+                <h5 class="card-header">Optional feedback? &nbsp; &nbsp;<a data-toggle="collapse" href="#feedback"
+                                                                           style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a>
+                </h5>
+                <div id="feedback" class="collapse" style="margin:5px">
+                    <div class="card-body">
+                    <p>If anything about the HIT was unclear, please comment below. I'd like to make my HITs easier for future workers, so I really appreciate feedback! Note: no need to point out incorrect/missing detections here. </p>
+                    <textarea class="form-control" rows="2" name="commentbox"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="problems"> </div>
+        </div>
+    </div>
+</section>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+      integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<style type="text/css">
+
+    .minipad {
+        padding-left: 0rem;
+    }
+    .questionrow {
+        border-bottom: 1px solid gray;
+        padding-bottom: 2px;
+        margin-bottom: 4px;
+        margin-left: 0;
+        margin-right: -5px;
+    }
+    .questionrowex {
+        border-bottom: 1px solid gray;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+        margin-right: -5px;
+    }
+
+
+    .panel {
+        padding: 10px;
+        margin-bottom: 3px;
+        margin-top: 5px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        font-size: 11pt;
+    }
+    .table {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        background-color: #e6e6e633;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+    .table td, .table th {
+        padding: 0.3rem;
+    }
+
+    .body {
+        font-size:11pt;
+    }
+
+    .emph {
+        background-color: #c3e6cb;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .example {
+        font-size:10pt;
+    }
+
+    .dont {
+        background-color: #ffcccb;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .do {
+        background-color: #98fb98;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .response {
+        background-color: #a7a6ba;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .rationale {
+        background-color: #fed8b1;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .superemph {
+        background-color: #e6a0a5;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .deemph {
+        /*background-color: #f9f9f9;*/
+        color: #141414;
+        /*font-weight: lighter;*/
+        font-size:10pt;
+    }
+
+    .row {
+        margin-right: -5px;
+        margin-left:-5px;
+    }
+    .questionbox {
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    .answerbox {
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    .input-group-text {
+        padding: 3px;
+        font-size: 0.8rem;
+    }
+    .card-header {
+        padding: .25rem .5rem;
+    }
+    .card {
+        margin-bottom: 3px;
+    }
+    .card-body {
+        padding-top: .75rem;
+        padding-bottom: 0;
+    }
+    .list-group-item {
+        padding: .2rem .5rem;
+        background-color: #e6e6e6;
+    }
+
+    .image-toggle {
+        border-color: #000;
+        white-space: normal;
+        color: #fff;
+    }
+
+    .img-container {
+      position: relative;
+      display: inline-block;
+    }
+    .annotimage {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-top:0;
+    }
+
+    .drawing-class {
+        height:0;
+    }
+    .segmentation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height:100%;
+      width:100%;
+    }
+
+    .smalltxt {
+        font-size:.6rem;
+    }
+    .form-check {
+        padding-left:0;
+        font-size:0.75rem;
+    }
+    .form-check-input {
+        margin-left:0;
+        position: relative;
+    }
+
+    .btn-sm {
+        border-radius: .2rem;
+        padding: 0.1rem 0.5rem;
+        margin-bottom:0;
+    }
+
+    .container {
+        padding:0;
+    }
+    .col-xl-12 {
+        padding:0;
+    }
+
+
+</style>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.5/svg.min.js" integrity="sha256-QvaFssiJCr71CxCZfYVWAXXGlwAqXbXerSdoW2t/Few=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.7/chroma.min.js"></script>
+<script src="https://cdn.rawgit.com/internalfx/distinct-colors/3bbd4cc2/dist/distinct-colors.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).on('input propertychange', "textarea[name='mp1_feel_2']", function () {
+        var len1 = $("#mp1_feel_1").val().length;
+        var len0 = $("#mp1_feel_0").val().length;
+        if (len0 < 110 || len1 < 110) {
+            $('#mp1_length_warning').text("Some of these captions might seem a little short. As a general reminder, make sure to include both a RESPONSE (which answers the question) and a RATIONALE (which refers to a physical change in the edit) in EACH caption.");
+        } else {
+            $('#mp1_length_warning').text("");
+        }
+    });
+    $(document).on('input propertychange', "textarea[name='mp2_feel_2']", function () {
+        var len1 = $("#mp2_feel_1").val().length;
+        var len0 = $("#mp2_feel_0").val().length;
+        if (len0 < 110 || len1 < 110) {
+            $('#mp2_length_warning').text("Some of these captions might seem a little short. As a general reminder, make sure to include both a RESPONSE (which answers the question) and a RATIONALE (which refers to a physical change in the edit) in EACH caption.");
+        } else {
+            $('#mp2_length_warning').text("");
+        }
+    });
+    $(document).on('input propertychange', "textarea[name='mp3_feel_2']", function () {
+        var len1 = $("#mp3_feel_1").val().length;
+        var len0 = $("#mp3_feel_0").val().length;
+        if (len0 < 110 || len1 < 110) {
+            $('#mp3_length_warning').text("Some of these captions might seem a little short. As a general reminder, make sure to include both a RESPONSE (which answers the question) and a RATIONALE (which refers to a physical change in the edit) in EACH caption.");
+        } else {
+            $('#mp3_length_warning').text("");
+        }
+    });
+    $(document).on('input propertychange', "textarea[name='implications_2']", function () {
+        var len1 = $("#implications_1").val().length;
+        var len0 = $("#implications_0").val().length;
+        if (len0 < 110 || len1 < 110) {
+            $('#implications_length_warning').text("Some of these captions might seem a little short. As a general reminder, make sure to include both a RESPONSE (which answers the question) and a RATIONALE (which refers to a physical change in the edit) in EACH caption.");
+        } else {
+            $('#implications_length_warning').text("");
+        }
+    });
+    $(document).on('input propertychange', "textarea[name='intent_2']", function () {
+        var len1 = $("#intent_1").val().length;
+        var len0 = $("#intent_0").val().length;ƒ
+        if (len0 < 110 || len1 < 110) {
+            $('#intent_length_warning').text("Some of these captions might seem a little short. As a general reminder, make sure to include both a RESPONSE (which answers the question) and a RATIONALE (which refers to a physical change in the edit) in EACH caption.");
+        } else {
+            $('#intent_length_warning').text("");
+        }
+    });
+</script>
+<script>
+$(document).ready(function() {
+    $("input[name$='mp1radio']").click(function() {
+        var test = $(this).val();
+
+        $("div.desc").hide();
+        $("#mp1radio" + test).show();
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+    $("input[name$='mp2radio']").click(function() {
+        var test = $(this).val();
+
+        $("div.desc").hide();
+        $("#mp2radio" + test).show();
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+    $("input[name$='mp3radio']").click(function() {
+        var test = $(this).val();
+
+        $("div.desc").hide();
+        $("#mp3radio" + test).show();
+    });
+});
+</script>
+<script>
+const FONTSIZE=25;
+
+function flattenPoints(points) {
+    const scaledPoints = [];
+    for(let i=0; i < points.length; i++) {
+        scaledPoints.push(points[i][0]);
+        scaledPoints.push(points[i][1]);
+    }
+    return scaledPoints
+}
+
+function drawSegmentation(name, box, segm, color, width, height) {
+    const draw = SVG('drawing').viewbox(0, 0, width, height);
+    draw.addClass('segmentation');
+    for (let i=0; i < segm.length; i++) {
+        draw.polygon(flattenPoints(segm[i])).fill({color: color.brighten(2).hex(), opacity: 0.3}).stroke({opacity:0.5, width:2, color:color.darken(2).hex()});
+    }
+    draw.rect(box[2]-box[0], box[3]-box[1]).move(box[0],box[1]).fill({opacity: 0}).stroke({opacity: 0.8, width: 5, color:color.hex()});
+
+    // const group = draw.group();
+    const color2use = '#000';
+    const topY = box[1]-FONTSIZE-7 > 0 ? box[1]-FONTSIZE-7 : box[1]-3;
+
+    const mytext = draw.text(name).move(box[0]+2, topY).font({family: 'Helvetica', size: FONTSIZE, weight:500}).fill(color2use);
+    // console.log(draw);
+    // console.log(mytext);
+    // const thebox = mytext.rbox(draw);
+    const thebox = mytext.bbox();
+    draw.rect(thebox.w+4, thebox.h+4).move(thebox.x, thebox.y-2).fill({color: color.brighten(2).hex(), opacity: 0.8}).stroke({opacity:0.8, width:3, color:color.hex()}).backward();
+    return draw;
+}
+
+function det_match(text, dets) {
+    // Get the detections that are good
+    var matches = text.match(/(\d+|everyone)/gi);
+    if (matches === null) {
+        return [];
+    }
+    matches = matches.filter(function (x) {
+        return (x === "everyone") || (Number(x) <= dets.length)
+    });
+    return matches;
+}
+
+function det_sub(text, dets) {
+    return text.replace(/(\d+|everyone)/gi, function(x) {
+        if ((x === "everyone") || (Number(x) <= dets.length)) {
+            return '';
+        } else {
+            return x;
+        }
+    });
+}
+
+function count_corefs(dets) {
+    // Make sure there are enough
+    let numCorefs = 0;
+    $('.hitbox').each(function() {
+        let text = $(this).val();
+        numCorefs += det_match(text, dets).length;
+    });
+    return numCorefs;
+}
+
+function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
+
+function find_syntax_mistakes(dets) {
+    // Try to find syntax errors
+    let mistakes = {};
+    $('.hitbox').each(function() {
+
+        let name = $(this).attr('name')[0].toUpperCase() + (Number($(this).attr('name')[1]) + 1);
+        let text = $(this).val();
+        let detMatchObj = det_match(text, dets);
+        let text0 = det_sub(text, dets);
+
+        // Find pronouns in the beginning
+        let pronouns = null;
+        if ((name[0] === "F") && (detMatchObj.length === 0)) {
+            pronouns = text0.match(/\W(he|she|him|her|his|hers)\W/gi);
+        }
+
+        // Count anything in brackets
+        let brackets = text0.match(/(\[.+?\])/g);
+        let text1 = text0.replace(/(\[.+?\])/g, '');
+
+        // Count things in parentheses
+        let parens = text1.match(/(\(.+?\))/g);
+        let text2 = text1.replace(/(\(.+?\))/g, '');
+
+        // Count numbers less than 100
+        let numbers = text2.match(/\b([0-9]|[1-9][0-9])\b/g);
+        let text3 = text2.replace(/\b([0-9]|[1-9][0-9])\b/g, '');
+
+        // Count weird characters
+        let weirdchars = text3.match(/([^A-Za-z0-9 \.,\?\'!\-\;\:])/g);
+        if (weirdchars !== null) {
+            weirdchars = weirdchars.filter(onlyUnique);
+        }
+
+        let text4 = text3.replace(/([^A-Za-z \.,\?!\-\;\:])/g, '');
+
+        if ((text4 !== text0) || (pronouns !== null)) {
+            mistakes[name] = {
+                brackets: brackets,
+                parens: parens,
+                numbers: numbers,
+                weirdchars: weirdchars,
+                pronouns: pronouns,
+            };
+        }
+    });
+    return mistakes;
+}
+
+
+const lengths_required = {
+    F: 3,
+};
+
+function ensure_long_enough() {
+    // Return a dict that's {row_num: is_problem, problems={field_length, needed_length}}
+    // The problems are either with the text length, or if nothing was checked for q/a/r.
+    var rowStatus = {};
+    var num_rows = 5;
+
+    for(let i=0; i < num_rows; i++) {
+        rowStatus[i] = {is_problem: false, problems: []};
+    }
+
+    $('.hitbox').each(function() {
+        let text_split = $(this).val().split(/\s+/).filter(Boolean);
+        let row_number = Number($(this).attr('name')[1]);
+        let name = $(this).attr('name')[0].toUpperCase() + (row_number+1);
+        if (lengths_required[name[0]] > text_split.length) {
+            rowStatus[row_number]['is_problem'] = true;
+            rowStatus[row_number]['problems'].push({
+                name: name,
+                length: text_split.length,
+                length_needed: lengths_required[name[0]],
+            });
+        }
+    });
+
+    // If there's a source
+    var is_checked = {};
+    $('.answerbox > .form-check-label > input:checked').each(function() {
+        is_checked[$(this).attr('name')] = true;
+    });
+    for(let i=0; i < num_rows; i++) {
+        if (!(('src' + i) in is_checked)) {
+            rowStatus[i]['is_problem'] = true;
+            rowStatus[i]['problems'].push({name: 'S' + (i+1), unchecked:true});
+        }
+    }
+    // If Q2-5 rows are consistently a problem then remove them.
+    for (let i=1; i < num_rows; i++) {
+        if (rowStatus[i]['is_problem'] && (rowStatus[i]['problems'].length >= 2)) {
+            delete rowStatus[i];
+        }
+    }
+    // console.log("ISCHECKED");
+    // console.log(is_checked);
+    // console.log("ROWSTATUS");
+    // console.log(rowStatus);
+
+    return rowStatus;
+}
+
+function addAlert(msg) {
+    let myAlert = $('<div class="alert alert-danger">');
+    myAlert.append(msg);
+    $('#problems').append(myAlert);
+}
+
+function addWarning(msg) {
+    let myAlert = $('<div class="alert alert-warning">');
+    myAlert.append(msg);
+    $('#problems').append(myAlert);
+}
+
+function validate() {
+    var isgood=true;
+    $('#problems').empty();
+
+    var dims = ["mp1_feel", "mp2_feel", "mp3_feel", "intent", "implications"]
+    var idxs = ["0", "1", "2"]
+    for (var i = 0; i < dims.length; i++) {
+        for (var j = 0; j < idxs.length; j++) {
+            if ($("#" + dims[i] + "_" + idxs[j]).val().length < 90) {
+                if (i == 0 || i == 1 || i == 2) { // mp1/2/3
+                    if ($("#" + dims[i] + "_" + idxs[j]).val().length < 15) {
+                        continue;
+                    }
+                }
+                addAlert("Caption " + (j + 1).toString() + " for prompt" + (i + 1).toString() + " is a little short. Did you check to make sure that all captions have a rationale (which refers to a physical change in the edit)?");
+            }
+        }
+    }
+
+    return isgood;
+}
+
+$( document ).ready(function() {
+    $.getJSON('https://s3-us-west-2.amazonaws.com/ai2-rowanz/vcr1images/movieclips_Mountains_of_the_Moon/NbhfbT2aU0k@10.json?sigh=' + Math.floor(Math.random() * 1000), function (data) {
+        // Show or hide on hover
+        // const palette = new DistinctColors({count: data.names.length, lightMin: 25});
+        //
+        // for (let i = 0; i < data.names.length; i++) {
+        //     let bgcolor = palette[i].darker().hex();
+        //     let bgcolorHighlight = palette[i].brighten().hex();
+        //     let name_i = (i+1).toString() + " (" + data.names[i] + ")";
+        //
+        //     let mybutton = $('<button type="button" class="btn image-toggle active" style="background-color: ' + bgcolorHighlight + '; color: #000" data-toggle="button" aria-pressed="true">').text(name_i);
+        //     let draw = drawSegmentation(name_i, data.boxes[i], data.segms[i], palette[i], data.width, data.height);
+        //     mybutton.on('click', function () {
+        //         if (mybutton.attr('aria-pressed') === 'true') {
+        //             mybutton.css({backgroundColor: bgcolor, color: '#fff'});
+        //             draw.attr('opacity', 0);
+        //         } else {
+        //             draw.attr('opacity', 1);
+        //             mybutton.css({backgroundColor: bgcolorHighlight, color: '#000'});
+        //         }
+        //     });
+        //
+        //     mybutton.hover(function () {
+        //         if (mybutton.attr('aria-pressed') === 'true') {
+        //             mybutton.css({backgroundColor: bgcolor, color: '#fff'});
+        //         } else {
+        //             mybutton.css({backgroundColor: bgcolorHighlight, color: '#000'});
+        //         }
+        //     }, function () {
+        //         if (mybutton.attr('aria-pressed') === 'true') {
+        //             mybutton.css({backgroundColor: bgcolorHighlight, color: '#000'});
+        //         } else {
+        //             mybutton.css({backgroundColor: bgcolor, color: '#fff'});
+        //         }
+        //     });
+        //     $('.buttonrow').append(mybutton);
+        // }
+        // let hideall = $('<button type="button" class="btn btn-outline-dark">').text('hide all').appendTo('#globalbutton');
+        // hideall.on('click', function () {
+        //     $('.buttonrow > button.active').click();
+        // });
+        //
+        // let showall = $('<button type="button" class="btn btn-outline-dark">').text('show all').appendTo('#globalbutton');
+        // showall.on('click', function () {
+        //     $('.buttonrow > button:not(.active)').click();
+        // });
+        $('#submitButton').on('click', function () {
+            return validate();
+        });
+    });
+
+    // Unfortunately I had to get rid of this script because it was causing some workers problems. Sorry about that :(
+    // $('[name="q0"]').focus().click();
+});
+</script>
