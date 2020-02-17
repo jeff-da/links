@@ -54,7 +54,8 @@ org_templates = ['This edit could potentially be used to ', 'Editor created this
 
 running_website = "" + bootstrap
 
-input_files = ['new_batch.csv']# ['Batch_3908447_batch_results.csv', 'Batch_3904853_batch_results.csv', 'Batch_3906965_batch_results.csv', 'Batch_3908920_batch_results.csv', 'Batch_3907743_batch_results.csv']
+input_files = ['batch.csv']# ['Batch_3908447_batch_results.csv', 'Batch_3904853_batch_results.csv', 'Batch_3906965_batch_results.csv', 'Batch_3908920_batch_results.csv', 'Batch_3907743_batch_results.csv']
+writefile_name = 'batch-review-2-16.html'
 
 for input_file in input_files:
     with open(input_file) as csv_file:
@@ -63,8 +64,7 @@ for input_file in input_files:
             image_o = row['Input.image_o']
             image_boxes = row['Input.image_b']
             # uncomment to generate
-            running_website += "<b> assignment: " + row["AssignmentId"] + "</b> \n"
-            running_website += "<b> worker: " + row["WorkerId"] + "</b>"
+            running_website += "<b> assignment: XXXXXXXXXXXXXXX" + row["AssignmentId"][-8:] + "</b> \n"
             running_website += image_template.format(image_o, image_boxes)
             # running_website += image_template.format(image_o, 'https://jeffda.com/research/part3b/{}.png'.format(idx))
             for item in intent_questions:
@@ -84,11 +84,6 @@ for input_file in input_files:
                     running_website += title_template.format(intent_questions[title], '[dim: ' + title.replace("feel", "effects") + ']') + box_label + current_paragraph
             pos_neg_tf = row["Answer.pos_neg_tf"]
             running_website += title_template.format("poor portrayal? ", pos_neg_tf)
-            store[row["WorkerId"]] += 1
 
-for x in store:
-    if store[x] > 15:
-        print(x)
-
-output_file = open('index.html', 'w')
+output_file = open(writefile_name, 'w')
 output_file.write(running_website)
