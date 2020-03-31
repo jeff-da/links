@@ -5,7 +5,7 @@
             <div class="card">
                 <textarea type="hidden" id="for_focus" style="height: 10px; width: 1px"></textarea>
                 <input type="hidden" name="te" value="-1">
-                <h5 class="card-header">Instructions (new! 2/17, including how pay works)&nbsp;<a data-toggle="collapse" href="#instructions"
+                <h5 class="card-header">Instructions&nbsp;<a data-toggle="collapse" href="#instructions"
                                                                          style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a>
                 </h5>
                 <div id="instructions" class="collapse">
@@ -19,20 +19,20 @@
                             <li>Write captions that would answer the question under each heading.
                             <ul> <li>A caption should be a short, complete sentence. The beginning of each caption is provided.</li>
                                 <li>Please write <span class="emph">1-3 captions per question, depending on how many you need to fully describe the edit.</span> Each caption should be different from the others.</li>
-                                <li>(new! 2/17) For fairness, you'll be paid $1.50 per HIT, plus $0.14 for each caption written (~2.76 for a HIT with 9 captions). You'll get a bonus for highly rated work (see examples)</li>
+                                <li>For fairness, you'll be paid $1.50 per HIT, plus $0.14 for each caption written (~3.26 for a HIT with 9 captions). You'll get a bonus for highly rated work (see examples)</li>
                                 <li>Each caption should be understood without looking at the original image(s).</li>
                                 <li>Each caption should include a <span class="response">response</span> that anwers the question and also a <span class="rationale">rationale</span> that explictly refers to the image edit.</li>
 </ul></li></ul>
-<p style="margin-bottom: 0"><b><i>Step-by-step instructions (new! 2/17):</i></b></p>
+<p style="margin-bottom: 0"><b><i>Step-by-step instructions:</i></b></p>
 <ul>
         <li>1) Before typing, think about the edit - what is the intent of the edit? Take mental note of who the main persons are - who the edit is featuring.
         <li>2) Scroll down to the questions. Answer prompt 1 (required): What physically changed in the edit? </li>
-            <li>3) Answer Prompt 2, <b>Is there a main person in this image (MP1)? (It's OK if there's no main people in the image, e.g. a background change.)</b></li>
+            <li>3) Answer Prompt 2, <b>Is there a main person in this image (MP1)? (new! 3/26 Please fill this out whenever possible, even for background changes.)</b></li>
         <ul>
             <li>If yes: label the box that captures MP1 by scrolling back up to the image labeled “Edit with Boxes”. If the boxes are hard to distinguish, just give your best guess and move on. We won’t penalize attempts here :)</li>
             <li>If yes: answer Prompt 2 (part 1/2). As a reminder, please write both a <span class="response">response</span> and a <span class="rationale">rationale</span> for EACH caption.</li>
             <li>For example: MP1 would <span class="response">feel like the last person in an apocalyptic world</span> <span class="rationale">due to the fire and the fact that mp1 looks dressed for the end of the world.</span></li>
-            <li><span class="emph">(new! 2/19)</span> If yes: answer Prompt 2 (part 2/2) if it applies. You should talk about specifically what someone might believe about MP1 (examples in Examples). If this doesn't really apply to this main person, you can skip.</li>
+            <li>If yes: answer Prompt 2 (part 2/2) if it applies. You should talk about specifically what someone might believe about MP1 (examples in Examples). If this doesn't really apply to this main person, you can skip.</li>
         </ul>
         <li>
             4) Answer Prompt 3 and Prompt 4 in a similar manner (for different people).
@@ -41,7 +41,7 @@
             5) Answer Prompt 5 and Prompt 6, which will ask you general questions about the image. Try to refer to each MP here.
         </li>
         <li>
-            6) <span class="emph">(new! 2/19)</span> Answer Prompt 7, if it applies. For this prompt, it's different from the "(part 2/2)" prompts in that you shouldn't focus on MP1/2/3, but rather, what you would generally take from the image as a whole. If there isn't anything you can be mislead by (e.g. it's just a funny edit), feel free to skip.
+            6) Answer Prompt 7, if it applies. For this prompt, it's different from the "(part 2/2)" prompts in that you shouldn't focus on MP1/2/3, but rather, what you would generally take from the image as a whole. If there isn't anything you can be mislead by (e.g. it's just a funny edit), feel free to skip.
         </li>
         <li>
             7) Submit!
@@ -55,14 +55,12 @@
             <li>Want to have these instructions open in a new tab? You can find a copy of them here. <a href="http://jeffda.com/links/research/part6.html">http://jeffda.com/links/research/part6.html</a></li>
             <li>Check out the examples! They should help with understanding what to do quickly.</li>
             <li><span class="emph">With simple edits, it's ok to be repetitive.</span> For example, if there is just one change, you can cite the same "rationale" for all captions. If the change is more complex, please try to use different captions.</li>
-            <li><span class="emph">It's okay if there's no main people, e.g. a background change.</span> You can still answer the last two questions.</li>
             <li>Do not refer explicitly to the images in your caption (e.g. saying “the image edit”, “the original edit”). The captions should make sense without needing to look at the images.</li>
             <li>Your captions between Prompts might be similar. This is ok! The only criteria is that it answers the related question.</li>
             <li>Try to refer to MP1, MP2, MP3, or other bounding boxes in the image via their tag (e.g. MP1) as often as you can.</li>
             <li>Please use the tags MP1, MP2, MP3 to refer to the people in the image. If the person you want to refer to is not a "main person", only then you can use a bounding box tag instead (e.g. 3).</li>
             <li>In the rare case that there are more than 3 main people in the image, pick 3 people to answer questions for.</li>
             <li>If something is hard to see (some images can be hectic), don't stress about labeling it. You only need to label the obvious people and obvious intent.</li>
-            <li>Sometimes, the detections may not include the main person. In this case, write n/a for the bounding box and continue to fill out captions for the main person.</li>
             <li>Please use the tags MP1, MP2, MP3 instead of the bounding box tags (e.g. do not say "3") whenever possible.</li>
             <li>If it does not seem like the edited image is similar to the origonal image, please treat the prompt as "why would someone make an image edit like this?" rather than "why would someone edit the source image like this?". Please don't skip the HIT!</li>
             <li>If the boxes are hard to tell or there are many boxes, just give your best guess. This will be fixed soon :)</li>
@@ -130,7 +128,17 @@
                 <ul>
                 <li>For example: This edit could potentially be used to <span class="response">promote prevention of air pollutants</span> <span class="rationale">because MP1 is surrounded by smoke and has a gas mask on.</span></li>
                 </ul>
-                <li>(new! 2/17) Except for Prompt 7, your captions should refer to <span class="emph">MP1/2/3</span> (e.g. instead of "Obama", say "MP1")</li>
+                <li>Your captions should refer to <span class="emph">MP1/2/3</span> (e.g. instead of "Obama", say "MP1")</li>
+                </ul>
+
+            </li></ul>
+
+            <ul class="minipad"><li class="list-group-item">
+                <span class="superemph">Changes (3/31)</span>
+                <ul>
+                <li>Bounding boxes are important (even more important than picking the correct main person). Please make sure a bounding box for MP1/2/3.</li>
+                <li>New: you MUST fill out MP1/2/3, even for background changes. Exceptions are if there is no person, or in extreme cases.</li>
+                <li>Please make sure to fill out the disinformation captions whenever it can apply to the given image (~50% of the time)</li>
                 </ul>
 
             </li></ul>
@@ -138,29 +146,29 @@
             <div class="panel">
                 <div class="card">
                     <h4>Image edit:</h4>
-                    <img src="${image_e}" />
+                    <img src="${image_e}" style="max-width: 500px; height: 100%; width: 100%;"/>
                      </div>
                      <h5 class="card-header">Titles, Edit with Boxes, Original Image &nbsp;<a data-toggle="collapse" href="#images" style="color:#0080ff;font-weight:normal;text-decoration: underline;">(expand/collapse)</a></h5>
                      <div id="images" class="collapse show">
                         <div class="row">
-                            <div class="card col-md-12"><h5>Original Image title <span class="emph">(new! 2/19)</span>:</h5>${image_o_title}</div>
+                            <div class="card col-md-12"><h5>Original Image title:</h5>${image_o_title}</div>
                         </div>
                         <div class="row">
-                            <div class="card col-md-12"><h5>Edited Image title <span class="emph">(new! 2/19)</span>:</h5>${image_e_title}</div>
+                            <div class="card col-md-12"><h5>Edited Image title:</h5>${image_e_title}</div>
                         </div>
                         <div class="row">
-                         <div class="card col-md-12"><h5>Edit with Boxes:</h5><img src="${image_b}" style="width:100%;"/></div>
+                         <div class="card col-md-12"><h5>Edit with Boxes:</h5><img src="${image_b}" style="max-width: 500px; height: 100%; width: 100%;"/></div>
                         </div>
                         <div class="row">
-                            <div class="card col-md-12"><h5>Original Image:</h5><img src="${image_o}" style="width:100%;"/></div>
+                            <div class="card col-md-12"><h5>Original Image (if this is missing, it's ok!):</h5><img src="${image_o}" style="max-width: 500px; height: 100%; width: 100%;"/></div>
                         </div>
                      </div>
 
                 <p></p>
                 </div>
             </div>
-            <ul class="minipad"><li class="list-group-item"><b>Prompt 1 <span class="emph">(new! 2/13)</span>: </b> What physically changed in the image edit?</li></ul>
-            <span class="example">Focus on the important change(s) only - how you would describe this edit in a sentence to someone who has never seen it before.</span>
+            <ul class="minipad"><li class="list-group-item"><b>Prompt 1: </b> What physically changed in the image edit?</li></ul>
+            <span class="example">Focus on the important change(s) only - how you would describe this edit in a sentence to someone who has never seen it before. Please use MP1/2/3 in this caption.</span>
 
             <div class="col-lg-12 questionbox">
                 <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Caption</span></div>
@@ -180,13 +188,12 @@
                         <div class="questionrow">
                                 <div class="row">
                                     <div class="col-lg-3 questionbox">
-                                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured</span></div>
-                                            <textarea class="form-control hitbox" rows="1" name="mp1_box" placeholder="e.g. 3"></textarea>
+                                        <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured (From "Image with Boxes")</span></div>
+                                            <textarea class="form-control hitbox" rows="1" name="mp1_box" id="mp1_box" placeholder="e.g. 3"></textarea>
                                         </div>
                                     </div>
                                     <label class="btn btn-sm btn-warning form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="mp1_no_box_tf" value="no_box">
-                                            Box missing.
+                                        If the box is missing, DO NOT LABEL this MP. Focus on Main Persons with boxes.
                                     </label>
                                 </div>
                             </div>
@@ -274,13 +281,12 @@
             <div class="questionrow">
                     <div class="row">
                         <div class="col-lg-3 questionbox">
-                            <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured</span></div>
-                                <textarea class="form-control hitbox" rows="1" name="mp2_box" placeholder="e.g. 3"></textarea>
+                            <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured (From "Image with Boxes")</span></div>
+                                <textarea class="form-control hitbox" rows="1" name="mp2_box" id="mp2_box" placeholder="e.g. 3"></textarea>
                             </div>
                         </div>
                         <label class="btn btn-sm btn-warning form-check-label">
-                            <input class="form-check-input" type="checkbox" name="mp3_no_box_tf" value="no_box">
-                                Box missing.
+                            If the box is missing, DO NOT LABEL this MP. Focus on Main Persons with boxes.
                         </label>
                     </div>
                 </div>
@@ -369,13 +375,12 @@
                 <div class="questionrow">
                         <div class="row">
                             <div class="col-lg-3 questionbox">
-                                <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured</span></div>
-                                    <textarea class="form-control hitbox" rows="1" name="mp3_box" placeholder="e.g. 3"></textarea>
+                                <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">Box Captured (From "Image with Boxes")</span></div>
+                                    <textarea class="form-control hitbox" rows="1" name="mp3_box" id="mp3_box" placeholder="e.g. 3"></textarea>
                                 </div>
                             </div>
                             <label class="btn btn-sm btn-warning form-check-label">
-                                <input class="form-check-input" type="checkbox" name="mp2_no_box_tf" value="no_box">
-                                    Box missing.
+                                If the box is missing, DO NOT LABEL this MP. Focus on Main Persons with boxes.
                             </label>
                         </div>
                     </div>
@@ -1140,21 +1145,24 @@ validated_good = false;
 function validate() {
     var isgood=true;
     var includeMP=false;
+    var filledMP=false;
     $('#problems').empty();
 
-    var dims = ["mp1_feel", "mp2_feel", "mp3_feel", "intent", "implications"]
+
+    var dims = ["mp1_feel", "mp2_feel", "mp3_feel", "intent", "implications", "disinfo"]
     var idxs = ["0", "1", "2"]
     for (var i = 0; i < dims.length; i++) {
         for (var j = 0; j < idxs.length; j++) {
             var len = $("#" + dims[i] + "_" + idxs[j]).val().length
             var textval = $("#" + dims[i] + "_" + idxs[j]).val()
-            if (len < 90) {
+            if (len < 90 && i != 5) {
                 if (i == 0 || i == 1 || i == 2) { // mp1/2/3
-                    if (len < 15) {
+                    if (len < 45) {
                         continue;
                     }
+                    filledMP = true;
                 } else {
-                    if (len < 41) {
+                    if (len < 50) {
                         continue;
                     }
                 }
@@ -1166,18 +1174,42 @@ function validate() {
                     includeMP = true;
                 }
             }
+            if (i == 5) {
+                if (textval.includes("MP1") || textval.includes("MP2") || textval.includes("MP3") || textval.includes("mp1") || textval.includes("mp2") || textval.includes("mp3")) {
+                    discludeMP = false;
+                }
+            }
         }
     }
+
+    var invalidBox = false;
+    var box_ids = ["mp1_box", "mp2_box", "mp3_box"]
+    for (var i = 0; i < box_ids.length; i++) {
+        var boxval = $("#" + box_ids[i] + "_" + idxs[j]).val()
+        if (isNaN(boxval) && !(boxval == '{}' || boxval == "")) {
+            invalidBox = true
+        }
+    }
+
     if (!includeMP) {
         addWarning("Remember to make sure to refer to MP1, MP2 and MP3 whenever possible in your captions.");
     }
 
     if (!isgood) {
         addAlert("Please make sure *all* your captions include a rationale, not just the ones listed above! I'll be reading the text of every HIT, and we look for a rationale in every caption as criteria for a high-quality HIT.")
-        addWarning("(new! 2/19) As long as you understand the warnings, you can submit by pressing Submit again.")
     }
 
-    return isgood || validated_good;
+    if (!filledMP) {
+       addAlert("(new! 3/31) Please fill out at least 1 main person connected to a bounding box whenever possible (this is a just in case reminder!).")
+    }
+
+    // if (invalidBox) {
+    //    addAlert("(new! 3/26) The box you use to label MP1/2/3 must be a number (e.g. 3). Please try your best to change the value to a single number, or if impossible, do not label that Main Person.")
+    // }
+
+    addWarning("As long as you understand the warnings, you can submit by pressing Submit again.")
+
+    return (filledMP && isgood) || validated_good;
 }
 
 $( document ).ready(function() {
